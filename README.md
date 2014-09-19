@@ -1,4 +1,5 @@
-appforms-integration-cloud
-==========================
+# Feedhenry Drag & Drop Apps Integration Cloud
 
-This app demonstrates the integration of Feedhenry AppForms functionality into an existing hybrid App. This is the cloud side of the app.
+This cloud app is intended for use with the Drag & Drop Apps Integration Hybrid Client.
+
+It presents a simple RESTful interface for performing CRUD operations on Jobs.
