@@ -23,6 +23,11 @@ app.use(mbaasExpress.fhmiddleware());
  */
 app.use('/jobs', require('./lib/jobs.js')());
 
+/**
+ * Users endpoints for dealing with users
+ */
+app.use('/user', require('./lib/user.js')());
+
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {
   res.end('Your Cloud App is Running');
