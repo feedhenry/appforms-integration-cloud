@@ -2,12 +2,13 @@
   "name": "Feedhenry Drag & Drop Apps Integration Cloud",
   "version": "0.1.0",
   "dependencies": {
-    "fh-mbaas-api" : "~4.5.0",
-    "request": "~2.40.0",
-    "body-parser": "~1.0.2",
-    "express": "~4.0.0",
+    "fh-mbaas-api": "~6.1.8",
+    "request": "~2.81.0",
+    "body-parser": "~1.17.1",
+    "express": "~4.16.0",
     "cors": "~2.2.0",
-    "underscore": "1.7.0"
+    "underscore": "1.7.0",
+    "snyk": "^1.42.6"
   },
   "devDependencies": {
     "grunt-contrib-watch": "latest",
@@ -26,5 +27,10 @@
     "grunt-open": "~0.2.3",
     "grunt-plato": "~1.0.0"
   },
-  "license": "mit"
+  "license": "mit",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
